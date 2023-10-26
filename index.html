@@ -1,0 +1,276 @@
+<!-- говорить про масштаб потерь -->
+<!-- тон оф войс - равный среде равных -->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P6SW86D");
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>Фейлы начинающего CTO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+        --ribbon-size: 40px;
+        --slide-side: 41px;
+        --color-grey: #353535;
+      }
+
+      .progress::before {
+        background-color: #ff0000;
+      }
+
+      .slide {
+        padding-top: 51px;
+        background-image: url("pictures/slide-cover.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+
+      .slide.clear {
+        background-image: none;
+      }
+
+      .slide::before {
+        position: absolute;
+        content: "X";
+        bottom: 25px;
+        left: 104px;
+      }
+
+      .slide.clear::before {
+        content: "";
+      }
+
+      .slide::after {
+        top: auto;
+        bottom: 10px;
+        left: auto;
+        right: 30px;
+        background: none;
+        color: #1a1a1a;
+      }
+
+      .slide h2 {
+        color: #1a1a1a;
+        font-size: 60px;
+      }
+
+      .slide h2.shout {
+        font-size: 100px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 80%;
+      }
+
+      .slide h2.shout.elevated {
+        margin-top: -35px;
+      }
+
+      .slide h2.shout.small {
+        font-size: 3em;
+      }
+
+      .slide .brand {
+        color: #ff0000;
+      }
+
+      .slide ol,
+      .slide ul {
+        padding-left: 40px;
+      }
+
+      .slide li {
+        font-size: 23px;
+      }
+
+      .slide pre {
+        font-size: 21px;
+        padding-left: 41px;
+      }
+
+      .cover {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body class="shower list">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P6SW86D"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="caption">
+      <h1>Фейлы начинающего CTO</h1>
+      <p>
+        <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+        <a href="https://mish.design/">Mish</a>
+      </p>
+    </header>
+
+    <section class="slide clear" id="cover">
+      <div style="width: 640px; padding-top: 30px; margin-left: -10px">
+        <h2>Фейлы начинающего CTO</h2>
+        <p>
+          <a href="https://alexey-avdeev.com/">Алексей Авдеев</a>,
+          <a href="https://mish.design/">Mish</a>
+        </p>
+      </div>
+      <style>
+        .shower #cover {
+          --slide-side: 60px;
+        }
+        #cover {
+          background: #fff url("pictures/title-cover.png") no-repeat center center;
+          background-size: contain;
+        }
+        #cover h2 {
+          margin: 0;
+          color: #000;
+          font-size: 62px;
+        }
+        #cover p {
+          margin: 18px 0 0;
+          color: #000;
+          font-size: 24px;
+        }
+        #cover p a {
+          color: #000;
+        }
+      </style>
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/mish_2023.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/tweet1.png" alt="" style="width: 80%" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/fc2022.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/skillbox.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/jsonapi_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/docker_youtube.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <img class="cover w" src="pictures/maxresdefault.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout elevated small">
+        <span style="font-size: 1.5em">1</span><br />Как случайно удалить базу данных на продакшене
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout small">Цените экспертизу</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout elevated small">
+        <span style="font-size: 1.5em">2</span><br />Как сделать проект, но не суметь его сдать
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout small">Начинайте с конца</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout elevated small">
+        <span style="font-size: 1.5em">3</span><br />Как уменьшить смету в 10 раз и сделать говно
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout small">Никогда не делайте говно</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout elevated small">
+        <span style="font-size: 1.5em">4</span><br />Как у меня выгорел джун
+      </h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout small">Не делайте говно</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout small">Цените каждый провал</h2>
+    </section>
+
+    <section class="slide" id="last-slide">
+      <h2>👏 Спасибо!</h2>
+
+      <ul>
+        <li>👨 Алексей Авдеев</li>
+        <li>🌐 <a href="https://github.com/avdeev">github.com/avdeev</a></li>
+        <li>
+          🌐
+          <a href="https://twitter.com/avdeev_alexey">twitter.com/avdeev_alexey</a>
+        </li>
+        <li>
+          🌐
+          <a href="https://vk.com/alexey.avdeev">vk.com/alexey.avdeev</a>
+        </li>
+
+        <li>🌐 Продуктовая лаборатория <a href="https://mish.design/">Mish</a></li>
+      </ul>
+      <img src="pictures/qrcode.png" alt="телеграм qr" />
+      <style>
+        #last-slide li {
+          font-size: 28px;
+        }
+
+        #last-slide img {
+          height: 300px;
+          position: absolute;
+          right: 95px;
+          top: 120px;
+        }
+      </style>
+    </section>
+
+    <footer class="badge">
+      <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+  </body>
+</html>
